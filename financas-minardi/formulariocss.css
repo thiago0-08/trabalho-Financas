@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #201b2c;
+}
+
+.main--dados{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+}
+
+.section--1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(#63FF88, #97f7b1, #d9f7e1);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    opacity: 0.8}
+
+img{
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+}
+
+.section--2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    background-color: #362f46;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*formulario*/
+
+h1{
+    color: #63FF88;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    background-color: #362f46;
+
+}
+
+fieldset{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 1px solid #63FF88;
+    border-radius: 10px;
+    background-color: #201b2c;
+}
+
+/*inputs--button*/
+
+article input, select{
+    width: 90%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 4px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #362f46;
+    color: #63FF88;
+}
+
+::placeholder{
+    opacity: 0.3;
+}
+
+fieldset label{
+    margin-left: 5%;
+    color: #63FF88;
+    font-size: 13px;
+}
+
+.article--btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.article--btn button{
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #63FF88;
+    background-color: #63FF88;
+    color: #201b2c;
+    cursor: pointer;
+}
+
+.article--btn button:hover{
+    background-color: #362f46;
+    color: #63FF88;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px){
+
+    .section--1{
+        display: none;
+    }
+
+    .main--dados, .section--2{
+        width: 100%;
+        height: 100%;
+    }
+
+    .section--2{
+        border-radius: 0;
+    }
+
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .section--1{
+        display: none;
+    }
+
+    .section--2{
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+
+
+@media screen and (max-height: 600px){
+    h1{
+        font-size: 20px;
+    }
+
+    form{
+        height: 100%;
+    }
+
+    fieldset{
+        width: 100%;
+        height: 100%;
+    }
+
+    fieldset label{
+        font-size: 7px;
+    }
+
+    article input, select{
+        padding: 2px;
+    }
+
+    .article--btn button{
+        margin-top: 0;
+        padding: 3px;
+    }
+
+}
+
+@media screen and (max-height: 800px){
+    h1{
+        font-size: 30px;
+    }
+
+    form{
+        height: 100%;
+    }
+
+    fieldset{
+        width: 100%;
+        height: 100%;
+    }
+
+    fieldset label{
+        font-size: 10px;
+    }
+
+    article input, select{
+        padding: 4px;
+    }
+
+    .article--btn button{
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+}
