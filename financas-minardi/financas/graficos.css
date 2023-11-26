@@ -1,0 +1,30 @@
+.retangulo1 {
+  border-top:  20%;
+    width: 350px;
+    height: 200px;
+    background-color: #dcdcea; /* Cor de fundo azul */
+    border-radius: 30px;
+  }
+
+  .container_grafico1 {
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    top: 150px;
+  }
+
+
+
+  .retangulo2 {
+    width: 350px;
+    height: 200px;
+    background-color: #dcdcea; /* Cor de fundo */
+    border-radius: 30px;
+  }
+
+  .container_grafico2 {
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+    top: 380px;
+  }
